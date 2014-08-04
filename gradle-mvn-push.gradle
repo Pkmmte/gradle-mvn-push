@@ -56,9 +56,6 @@ afterEvaluate { project ->
                     authentication(userName: getRepositoryUsername(), password: getRepositoryPassword())
                 }
                 
-                logger.info("Username is " + getRepositoryUsername())
-                logger.info("Password is " + getRepositoryPassword())
-
                 pom.project {
                     name POM_NAME
                     packaging POM_PACKAGING
